@@ -1,9 +1,15 @@
 package com.example.xjj.xappstore;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
+/**
+ * @author : xjj
+ * @date : 2018/4/15
+ * email : alterjx@163.com
+ * describe : 初次进入时展示的界面
+ */
 public class SplashActivity extends AppCompatActivity {
 
     // Used to load the 'native-lib' library on application startup.
@@ -17,7 +23,7 @@ public class SplashActivity extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
 
         // Example of a call to a native method
-        TextView tv = (TextView) findViewById(R.id.sample_text);
+        TextView tv = findViewById(R.id.sample_text);
         tv.setText(stringFromJNI());
     }
 
